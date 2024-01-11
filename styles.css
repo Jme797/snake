@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main {
+    background-color: lightgrey;
+    width: 600px;
+    height: 600px;
+
+    display: grid;
+    grid-template-rows: repeat(40, 1fr);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+}
+
+.col {
+    border: black 1px solid;
+}
+
+.active {
+    background-color: red;
+}
+
+.food {
+    background-color: green;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 2rem;
+}
